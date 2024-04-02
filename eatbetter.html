@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat better</title>
+    <style>
+    body {
+        font-family: 'Inter', Fallback, sans-serif;
+        font-weight: 400;
+        color: #000;
+        background-color: rgb(253, 247, 239);
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .container {
+            display: flex; /* Use flexbox layout */
+            justify-content: space-between; /* Distribute space between elements */
+        }
+        
+        /* Style for the left section */
+        .left-section {
+            width: 1000px;
+            position: relative;
+            left: 2%; /* Adjust width as needed */
+        }
+        
+        /* Style for the right section */
+        .right-section {
+            width: 45%; /* Adjust width as needed */     
+        }
+        .rectangle {
+     width: 1560px; 
+     height: 160px; 
+     background-color: #ffffff; 
+     border: 2px solid #333; 
+     border-radius: 10px; 
+     padding: 20px; 
+     box-sizing: border-box;
+     text-align: center; 
+     line-height: 100px; 
+     position: absolute;
+ }  
+ form {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     top: 20px;
+     right: 20px;
+ }
+ 
+ input[type="text"] {
+     padding: 8px;
+     border: 1px solid black;
+     background-color: rgb(205, 209, 255);
+     border-radius: 4px;
+     font-size: 16px;
+     width: 300px;
+     margin-right: 10px;
+ }
+ 
+ button[type="submit"] {
+     padding: 8px 12px;
+     background-color: #23d920;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 16px;
+ }
+ 
+ button[type="submit"]:hover {
+     background-color: #1a7408;
+ }
+ .logo{
+     position: relative;
+     width: 150px;
+     height: 150px;
+     top: 80px;
+     left: 90px;
+     transform: translate(-50%, -50%);
+     z-index: 1; 
+ } 
+ nav a{
+     position: relative;
+     font-size: 30px;
+     top: -50px;
+     left: 170px;
+     font-weight: 500;
+     color: black;
+     text-decoration: none;
+     padding: 6px 20px;
+     transition: .5s;     
+ }
+ nav a:hover{
+     color: green;
+ }
+ .aim{
+    width: 1500px;
+    height: 600px;
+    position: relative;
+    left: 2%;
+ }
+ 
+ footer {
+text-align: center;
+margin-top: 30px;
+padding: 10px;
+background-color: rgb(25, 168, 49);
+color: white;
+ }
+ menu{
+    position: relative;
+    top: -2760px;
+    left: 1040px;
+    font-size: 40px;    
+ }
+
+ .menus {
+    border-left: 2px solid #F58720;
+    color: #000;
+    position: relative; 
+    margin-bottom: 10px;
+    margin-left: 2px;
+    display: block;
+    text-decoration: none;
+    
+ }
+ nav1 a {
+    text-decoration: none; 
+    padding: 5px 10px; 
+    transition: background-color 0.3s; 
+}
+
+nav1 a:hover {
+    background-color: rgb(25, 168, 49); 
+}
+p {
+    font-size: 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0 0 10px;
+}
+ul{
+    font-size: 18px;
+}
+#second{
+    font-size: 25px;
+    position: relative;
+    background-color: #F58720;
+    width: 550px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    top: -570px;
+    left: 0.3%;
+    text-align: center;
+}
+#map {
+    height: 220px;
+    width: 1540px;
+    position: relative;
+    left: 0%;
+}
+  #find-me{
+    position: relative;
+    left: 0%; 
+  }
+  .Su{
+    width: 50%;
+    height: 50%;
+    margin-left: 130px;
+    margin-bottom: 70px;
+    border-radius: 50%;
+}
+.Ath{
+    width: 65%;
+    height: 65%;
+    margin-left: 50px;
+    margin-bottom: 70px;
+    border-radius: 50%;
+}
+.shi{
+    width: 65%;
+    height: 65%;
+    margin-left: 50px;
+    margin-bottom: 70px;
+    border-radius: 50%;
+}
+
+.Ri{
+    width: 50%;
+    height: 50%;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    border-radius: 50%;
+}
+
+    </style>
+</head>
+<body>
+    <div class="rectangle">
+        <h1 style="position: absolute; left: 200px; bottom: 25px; font-size: 40px;"><u>ECO-CONNECT:</u></h1><h2 style="position: absolute; left: 33%; bottom: 16%; color: rgb(3, 83, 3);"><u>SHARE-LEARN-THRIVE</u></h2>
+        <form action="/search" method="GET">
+            <input type="text" name="query" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div>
+        <a href="http://127.0.0.1:5501/food.html"> <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTajUnhWwGk3EuqEZihxwttfE_qGLxRLQEeFQ&usqp=CAU"></a>
+    </div>
+        
+    <nav>
+        <a href="http://localhost/project/index.php">Home<span></span></a>
+        <a href="food.html">Food<span></span></a>
+        <a href="geo1.html">Health<span></span></a>
+        <a href="paperless.html">Recycle<span></span></a>
+    </nav>  
+
+    <img class="aim" src="https://nutritionstudies.org/wp-content/uploads/2020/10/can-eating-less-meat-and-dairy-help-save-our-planet-all-signs-point-to-yes.jpg" alt="Eat less meat and dairy">
+    <div id="second"><b>Eat better, and less meat and dairy</b></div>
+
+    <div class="container">
+        <div id="articleCopy" class="left-section">
+    <h2 style="font-size: 30px;">The problem</h2>
+
+    <p><strong>Meat, dairy and ill-health</strong></p>
+    
+    
+<p>Despite the popularity of meat and dairy products, evidence suggests they are not essential in our diets. Consumption of red and processed meats, as well as saturated fats from full-fat dairy products, has been linked to various diseases.</p>
+<p>The Department of Health and the World Cancer Research Fund recommend limiting red meat intake to around 70g per day and minimizing processed meat consumption. However, many exceed these guidelines, increasing their risk of diseases like coronary heart disease, stroke, and diabetes.</p>
+<p>Cheese, sausages, pies, and similar products are often high in fat and salt, contributing to heart disease and strokes. Even poultry, considered healthier, has become fattier due to changes in farming and processing.</p>
+<p><strong>Contributing to climate change</strong></p>
+<p>Animal farming globally emits more greenhouse gases than all transportation combined. This is due to various factors like intensive feed production, methane emissions from livestock, deforestation for grazing, and transportation of animal products.</p>
+<p>Intensive livestock farming also consumes large amounts of fresh water, exacerbating water scarcity issues, particularly in the face of climate change-induced extreme weather events.</p>
+<p><strong>Undermining animal welfare</strong></p>
+<p>Factory farming practices often subject animals to overcrowding, confinement, and mistreatment. This includes practices like tail docking, early weaning, and breeding for increased productivity, compromising animal welfare.</p>
+<h2>What we can do</h2>
+<p><strong>Buy better, and less meat and dairy produce</strong></p>
+<p>Plant-based diets, rich in vegetables, fruits, pulses, nuts, seeds, and whole grains, offer health benefits and reduce the risk of various diseases. Choosing products from recognized assurance schemes like Organic and Free Range can ensure higher animal welfare standards and support sustainable farming practices.</p>
+<p>'Rare breed' meats from native British livestock can also be a sustainable choice, benefiting both animal welfare and local environments.</p>
+    
+    <p>&nbsp;</p>
+    </div></div>
+
+    <nav1>
+        <h1 style="position: absolute; top: 920px; left: 1070px; font-size: 30px;" class="menus">Content</h1>
+        <a style="position: absolute; top: 980px; left: 1070px; font-size: 25px;" class="menus"  href="http://127.0.0.1:5501/aim.html">Aim to be waste free</a><br>
+        <a style="position: absolute; top: 1040px; left: 1070px; font-size: 25px;" class="menus" href="http://127.0.0.1:5501/eatbetter.html">Eat better, and less meat and dairy</a><br>
+        <a style="position: absolute; top: 1100px; left: 1070px; font-size: 25px;" class="menus" href="http://127.0.0.1:5501/buylocal.html">Buy local, seasonal and environmentally<br> friendly food</a><br>
+        <a style="position: absolute; top: 1180px; left: 1070px; font-size: 25px;" class="menus" href="http://127.0.0.1:5501/fairtrade.html">Choose Fairtrade-certified products</a><br>
+        <a style="position: absolute; top: 1240px; left: 1070px; font-size: 25px;" class="menus" href="http://127.0.0.1:5501/fishonly.html">Select fish only from sustainable sources</a><br>
+        <a style="position: absolute; top: 1300px; left: 1070px; font-size: 25px;" class="menus" href="http://127.0.0.1:5501/rightbalance.html">Get the balance right</a><br>
+        <a style="position: absolute; top: 1360px; left: 1070px; font-size: 25px;" class="menus" href="http://127.0.0.1:5501/growown.html">Grow our own; buy the rest from a <br>wide range of outlets</a>
+    </nav1> 
+
+    <footer>
+        <h1>About Us</h1>
+
+    </h1>
+    <div style="justify-content: center;
+                align-items: center;
+                display: flex;">
+
+        <div style="justify-content: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;">
+            <img src="images/subagh.jpg" alt="1" class="Su">
+            <a href="https://www.linkedin.com/in/subhag-raut-246512274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " style="margin-left: 5%;font-size:40px;margin-top:auto; color: white;" >Subagh</a>
+        </div>
+
+        <div style="justify-content: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        ">
+            <img src="images/a11.jpg" alt="1" class="Ath">
+            <a href="https://www.linkedin.com/in/atharv-shevade-b182b52b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " style="margin-right: 20% ;font-size:40px;margin-top:auto; color: white;">Atharv</a>
+        </div>
+
+        <div style="justify-content: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;">
+            <img src="images/shiva.jpg" alt="1" class="shi">
+            <a href="https://www.linkedin.com/in/shivashankar-meganathan-5ab51b26b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " style="margin-left:5% ;font-size:40px;margin-top:auto; color: white;">Shivashankar</a>
+        </div>
+
+        <div style="justify-content: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;">
+            <img src="images/ricky_photo.jpg" alt="1" class="Ri">
+            <a href="https://www.linkedin.com/in/rickysingh-tekcham-996046288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " style="  margin-right: 20%; font-size:40px;margin-top:auto; color: white;">Ricky</a>
+        </div>
+        </div>
+        <button id="find-me">Locate Us</button>
+        <div id="map"></div>
+        <p>Discover more sustainable living practices on our platform. Join the community today!</p>
+        
+    </footer>   
+   
+</body>
+
+    <script >
+        const button = document.querySelector('#find-me');
+const map = document.querySelector('#map');
+
+button.addEventListener('click', () => {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      const lat = position.coords.latitude;
+      const lon = position.coords.longitude;
+      const coords = `${lat}, ${lon}`;
+      map.innerHTML = `<iframe src="https://maps.google.com/maps?q=${coords}&z=15&output=embed" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`;
+    });
+  } else {
+    alert('Geolocation is not supported by this browser.');
+  }
+});
+</script>
+</html>

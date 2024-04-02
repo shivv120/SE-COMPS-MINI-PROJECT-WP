@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Paperless for a Sustainable Lifestyle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(./paperless_.jpg);
+            background-size: cover;
+            background-position: center;
+            opacity: 50;
+            text-rendering: optimizeLegibility;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            color: black;
+        }
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        iframe {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            width: 350px;
+            height: 250px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        ul {
+            color: black;
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+            iframe {
+                width: 100%;
+                height: 200px;
+            }
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+        }
+
+        li::before {
+            content: "\2014"; 
+            position: absolute;
+            left: 0;
+            color: burlywood; 
+        }
+        .nav-right {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .nav-right a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .baju{
+            text-align: right;
+            margin-right: 30px;
+
+        }
+        a{
+            padding-top: 40px;
+            padding-right: 40px;
+            font-size: 25px;
+            color: white;
+
+        }
+        #location {
+            margin-top: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type=email] {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type=submit] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #map {
+            height: 300px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .footer-images {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-images a {
+    display: inline-block;
+    margin: 0 10px;
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.footer-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%; /* Ensure the image remains in a circle */
+}
+
+#map {
+    height: 250px;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><img src="plogo.png" alt="logo" height="60px" width="60px"/> Paperless for a Sustainable Lifestyle</h1>
+        <nav class="baju">
+            <a href="index.html">Home</a>
+            <a href="#about">About Us</a>   
+            <a href="form.html">Register</a>
+        </nav>
+    </header>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/VGsEN1lM0nI" title="5 Ways that Going Paperless Has Improved Our Lives" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<section>   
+    <h2>Benefits of Going Paperless:</h2>
+    <ul>
+        <li>Reduces deforestation and saves trees</li>
+        <li>Decreases carbon footprint associated with paper production</li>
+        <li>Minimizes water and energy consumption in paper manufacturing</li>
+        <li>Reduces waste and promotes recycling</li>
+    </ul>
+
+    <h2>Tips for a Paperless Lifestyle:</h2>
+    <ul>
+        <li>Use digital documents and e-books</li>
+        <li>Opt for electronic billing and statements</li>
+        <li>Utilize note-taking apps and tools</li>
+        <li>Send and receive emails instead of printed letters</li>
+        <li>Choose electronic tickets and boarding passes</li>
+        <li>Recycle and properly dispose of electronics</li>
+    </ul>
+
+    <h2>Take Action:</h2>
+    <p>Join us in embracing a paperless lifestyle for a greener and more sustainable future. Share your commitment and inspire others to make the switch!</p>
+
+    <div class="form-container">
+        <form method="POST" action="project.php">
+            <label for="email">Subscribe to our Newsletter:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        
+    </div>
+
+    <div id="location">
+        <button onclick="getLocation()" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+            Get My Location
+        </button>
+        <p id="coordinates" style="margin-top: 10px;"></p>
+        <div id="map"></div>
+    </div>
+    
+</section>
+
+<footer style="background-color: black;">
+    <p id="about" >&copy; 2024 Go Paperless Initiative. All rights reserved. |   About Us</p>
+    <div class="footer-images">
+        <a href="https://www.linkedin.com/in/subhag-raut-246512274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="Subhag.jpg" alt="Image 1"></a>
+        <a href="https://www.linkedin.com/in/rickysingh-tekcham-996046288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="Ricky.jpg" alt="Image 2"></a>
+        <a href="https://www.linkedin.com/in/shivashankar-meganathan-5ab51b26b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="Shivashankar.jpg" alt="Image 3"></a>
+        <a href="https://www.linkedin.com/in/atharv-shevade-b182b52b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="Atharv.jpg" alt="Image 4"></a>
+    </div>
+</footer>
+
+
+<script>
+
+    function initMap(latitude, longitude) {
+    var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: parseFloat(latitude), lng: parseFloat(longitude)},
+    zoom: 8
+   });
+         var marker = new google.maps.Marker({
+            position: {lat: parseFloat(latitude), lng: parseFloat(longitude)},
+    map: map
+    });
+    }
+
+    function getLocation() {
+    var locationButton = document.getElementById('location').getElementsByTagName('button')[0];
+    var coordinatesText = document.getElementById('coordinates');
+
+    locationButton.disabled = true;
+    coordinatesText.textContent = 'Locating...';
+
+    if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    var coordinates = "Latitude: " + latitude + "<br>Longitude: " + longitude;
+    coordinatesText.innerHTML = coordinates;
+    locationButton.disabled = false;
+
+   initMap(latitude, longitude);
+    }, function(error) {
+    coordinatesText.textContent = 'Error getting location: ' + error.message;
+    locationButton.disabled = false;
+    });
+    } else {
+            coordinatesText.textContent = 'Geolocation is not supported by this browser.';
+           locationButton.disabled = false;
+         }
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHgTG3kj8dNY-JncW6P12lj1r8n2hIsUw&callback=initMap" async defer></script>
+
+</body>
+</html>
